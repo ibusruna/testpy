@@ -16,17 +16,44 @@
 # print(b)
 
 ####### Conditional Statements (if elif else)
-x = 1
-y = 2
+# x = 1
+# y = 2
 
-if x == 1 and y == 2 or x == 1 and y == 3:
-    print("yes")
+# if x == 1 and y == 2 or x == 1 and y == 3:
+#     print("yes")
 
-elif x == 1:
-    print("yes")
+# elif x == 1:
+#     print("yes")
 
-else:
-    print("no")
+# else:
+#     print("no")
 
-a = 5 if x ==1 else 0 #this is a ternary operator
-print(a)
+# a = 5 if x ==1 else 0 #this is a ternary operator
+# print(a)
+
+####### Loops and operators in them
+
+for i in range(0, 10, 3):
+    print(i)
+
+isCar = True
+
+while isCar:
+    if input("Enter text: ") == "Stop":
+        isCar = False
+
+count = 0
+for i in "hello":
+    if i == "l":
+        count+=1
+print(count) 
+
+found = None
+for i in "hello":
+    if i == "l":
+        found = True
+        break
+    else:
+        found = False
+        
+print(found)
