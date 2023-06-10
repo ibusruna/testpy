@@ -33,7 +33,7 @@
 
 ####### Loops and operators in them
 
-for i in range(0, 10, 3):
+"""for i in range(0, 10, 3):
     print(i)
 
 isCar = True
@@ -56,4 +56,18 @@ for i in "hello":
     else:
         found = False
         
-print(found)
+print(found)"""
+
+
+################# Lists
+n = int(input("Enter length: "))
+
+user_list = []
+
+i = 0
+while i < n:
+    string = "Enter element #" + str(i + 1) + ": "
+    user_list.append(input(string))
+    i += 1
+
+print(user_list)
