@@ -71,3 +71,23 @@ while i < n:
     i += 1
 
 print(user_list)
+
+
+######################## String functions, indices and slices
+x = 'heLlo, hI, woRld'
+b = x.split(',')
+
+for i in range(len(b)):
+    b[i] = b[i].capitalize()   
+print(b)    
+
+r = ','.join(b)
+print(r)
+
+a = 'hellows'
+print(a[0:-1:2])
+print(a[:])
+print(a[::])
+print(a[0::2])
+print(a[::-1])
+print(a[::-2])
