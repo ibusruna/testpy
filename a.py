@@ -60,7 +60,7 @@ print(found)"""
 
 
 ################# Lists
-n = int(input("Enter length: "))
+'''n = int(input("Enter length: "))
 
 user_list = []
 
@@ -70,11 +70,11 @@ while i < n:
     user_list.append(input(string))
     i += 1
 
-print(user_list)
+print(user_list)'''
 
 
 ######################## String functions, indices and slices
-x = 'heLlo, hI, woRld'
+'''x = 'heLlo, hI, woRld'
 b = x.split(',')
 
 for i in range(len(b)):
@@ -90,4 +90,51 @@ print(a[:])
 print(a[::])
 print(a[0::2])
 print(a[::-1])
-print(a[::-2])
+print(a[::-2])'''
+
+
+############### tuple()
+'''x = (1, 'gello', True, 1.5)
+print(x)
+print(list(x))
+
+y = (5,) 
+# or y = 5,
+print(y)
+
+num = [1, 2, 3]
+print(tuple(num))
+
+word = 'hello'
+print(tuple(word))'''
+
+
+############## dict
+x = {'code': 'RU', 'name': 'Russian', 'population': 144}
+print(x['name']) # Ковычки обязательны
+
+a = dict(code='RU', name='Russia')
+print(a['code'], end='\n\n')
+
+print(x.items(), end='\n\n')
+
+for i in x:
+    print(i, end='\n\n')
+
+for key, value in x.items():
+    print(key, '-', value)
+    
+x['code'] = 'None'
+
+a = {
+    'user_1':{
+        'first_name': 'John',
+        'last_name': 'Maley',
+        'age': '27',
+        'address': ('c. Khasavyrt', 's. Center', 'h. 3'), 
+        'grades': {'math': 5, 'physics': 3}
+    },
+    'user_2': {}
+}
+print(a['user_1']['address'][2],a['user_1']['grades']['math'])
+print(a['user_1']['grades']['math'])
