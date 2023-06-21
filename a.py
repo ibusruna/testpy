@@ -1,39 +1,38 @@
-# print(5//3, "\"", end="\n")
-# print(min(1, 2, 4, 5), max(2, 10))
-# print(pow(5, 3))
-# print(round(5 / 3))
+'''
+print(5//3, "\"", end="\n")
+min(1, 2, 4, 5)
+max(2, 10)
+pow(5, 3)
+round(5 / 3)
 
-####### Lesson #4 
-# x = 5
+### variables 
+x = 5
+del x
 
-# del x
+y = 1.3
 
-# y = 1.3
-# print(y)
+b = True
+b = False
 
-# b = True
-# b = False
-# print(b)
+### Conditional Statements (if elif else)
+x = 1
+y = 2
 
-####### Conditional Statements (if elif else)
-# x = 1
-# y = 2
+if x == 1 and y == 2 or x == 1 and y == 3:
+    print("yes")
 
-# if x == 1 and y == 2 or x == 1 and y == 3:
-#     print("yes")
+elif x == 1:
+    print("yes")
 
-# elif x == 1:
-#     print("yes")
+else:
+    print("no")
 
-# else:
-#     print("no")
+a = 5 if x ==1 else 0 #this is a ternary operator
 
-# a = 5 if x ==1 else 0 #this is a ternary operator
-# print(a)
 
-####### Loops and operators in them
+### Loops and operators in them
 
-"""for i in range(0, 10, 3):
+for i in range(0, 10, 3):
     print(i)
 
 isCar = True
@@ -56,11 +55,11 @@ for i in "hello":
     else:
         found = False
         
-print(found)"""
+print(found)
 
 
-################# Lists
-'''n = int(input("Enter length: "))
+### Lists
+n = int(input("Enter length: "))
 
 user_list = []
 
@@ -70,11 +69,11 @@ while i < n:
     user_list.append(input(string))
     i += 1
 
-print(user_list)'''
+print(user_list)
 
 
-######################## String functions, indices and slices
-'''x = 'heLlo, hI, woRld'
+### String functions, indices and slices
+x = 'heLlo, hI, woRld'
 b = x.split(',')
 
 for i in range(len(b)):
@@ -90,11 +89,11 @@ print(a[:])
 print(a[::])
 print(a[0::2])
 print(a[::-1])
-print(a[::-2])'''
+print(a[::-2])
 
 
-############### tuple()
-'''x = (1, 'gello', True, 1.5)
+### tuple()
+x = (1, 'gello', True, 1.5)
 print(x)
 print(list(x))
 
@@ -106,10 +105,10 @@ num = [1, 2, 3]
 print(tuple(num))
 
 word = 'hello'
-print(tuple(word))'''
+print(tuple(word))
 
 
-############## dict
+### dict
 x = {'code': 'RU', 'name': 'Russian', 'population': 144}
 print(x['name']) # Ковычки обязательны
 
@@ -140,9 +139,10 @@ print(a['user_1']['address'][2])
 print(a['user_1']['grades']['math'])
 
 
-######### Множества set() frozenset()
+### Множества set() frozenset()
 y = {1, 2, 4, 3, 2, 1}
 
 x = set('hello')
 
 f = frozenset([1, 1, 'g', True])
+'''
