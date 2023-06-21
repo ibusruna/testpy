@@ -136,5 +136,13 @@ a = {
     },
     'user_2': {}
 }
-print(a['user_1']['address'][2],a['user_1']['grades']['math'])
+print(a['user_1']['address'][2])
 print(a['user_1']['grades']['math'])
+
+
+######### Множества set() frozenset()
+y = {1, 2, 4, 3, 2, 1}
+
+x = set('hello')
+
+f = frozenset([1, 1, 'g', True])
